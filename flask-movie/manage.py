@@ -1,10 +1,9 @@
 # encoding: utf-8
-
+from main import app
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from exts import db
-from main import app
-from models import UserLog, Tag, Movie, Preview, Comment, Moviecol, Auth, Role, Admin, Adminlog, Oplog
+
 
 # 绑定app和db
 migrate = Migrate(app, db)
